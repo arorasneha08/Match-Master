@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/game.css" />
+</head>
+
+<body class="game-body">
+  <div class="game-container">
+    <div class="game-header">
+      <h1 class="game-title">Match Master</h1>
+      <div class="game-info">
+        <p>Moves: <span id="moves">0</span></p>
+        <p>Time: <span id="timer">0s</span></p>
+      </div>
+    </div>
+
+    <div class="game-board" id="game-board"></div>
+  </div>
+
+  <!-- Result Modal -->
+  <div id="result-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="result-title"></h2>
+      <p id="result-stats"></p>
+      <div class="modal-buttons">
+        <button id="play-again" class="btn-primary">🔁 Play Again</button>
+        <button id="home-btn" class="btn-secondary">🏠 Home</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../scripts/game.js"></script>
+</body>
+
+</html>
